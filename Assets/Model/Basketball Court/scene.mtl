@@ -1,0 +1,41 @@
+# Exported from 3D Builder
+
+newmtl Mesh_0
+Kd 0.643138 0.603921 0.596079
+
+newmtl Outer_Floor_0
+Kd 1.000000 0.850980 0.603921
+
+newmtl Inner_Floor_0
+Kd 0.321569 0.364706 0.388236
+
+newmtl Wall_0
+Kd 0.713726 0.705882 0.725490
+
+newmtl Support_Pillars_0
+Kd 0.427451 0.411764 0.415687
+
+newmtl Material.002_0
+Kd 1.000000 1.000000 1.000000
+map_Kd Material.002_baseColor_17832851910588591680.png
+
+newmtl Light_Pillars_0
+Kd 0.499993 0.472671 0.448081
+
+newmtl Bench_Top_0
+Kd 0.933333 0.776471 0.537255
+
+newmtl Bench_Bottom_0
+Kd 0.168627 0.188235 0.211765
+
+newmtl Dust_Bin_0
+Kd 0.807843 0.756862 0.694117
+
+newmtl Basketball_Stand_0
+Kd 0.556863 0.501961 0.498039
+
+newmtl White_0
+Kd 0.906332 0.906332 0.906332
+
+newmtl material_0
+Kd 0.615687 0.364706 0.329412
