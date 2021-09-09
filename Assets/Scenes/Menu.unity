@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 97104694}
   - component: {fileID: 97104693}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: GravitasiInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 791645225}
   - component: {fileID: 791645224}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: JarakInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1887,7 +1887,7 @@ GameObject:
   - component: {fileID: 813974875}
   - component: {fileID: 813974874}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: PlayerInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2674,6 +2674,7 @@ GameObject:
   - component: {fileID: 1114906906}
   - component: {fileID: 1114906905}
   - component: {fileID: 1114906904}
+  - component: {fileID: 1114906908}
   - component: {fileID: 1114906907}
   m_Layer: 0
   m_Name: EventSystem
@@ -2742,6 +2743,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e106d273a04cb4a9e34172f4b9d61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1114906908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114906903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e41886213c62e4ea64c301990f8535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputTinggiRing: {fileID: 1273297534}
+  _inputTinggiPemain: {fileID: 813974874}
+  _inputJarak: {fileID: 791645224}
+  _inputGravitasi: {fileID: 97104693}
 --- !u!1 &1143107079
 GameObject:
   m_ObjectHideFlags: 0
@@ -3016,7 +3033,7 @@ GameObject:
   - component: {fileID: 1273297535}
   - component: {fileID: 1273297534}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: RingInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
