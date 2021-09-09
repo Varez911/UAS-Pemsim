@@ -9,4 +9,9 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("Simulasi");
     }
+
+    public void ToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

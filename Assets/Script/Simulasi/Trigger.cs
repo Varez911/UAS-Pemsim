@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Trigger : MonoBehaviour
 {
     public Animator playerAnimator;
+    
     [Space]
     public GameObject bolaBasket;
     public GameObject playerHand, lokasiBola;
