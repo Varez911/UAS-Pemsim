@@ -17,4 +17,13 @@ public class InputData : MonoBehaviour
         Konstanta.jarak = int.Parse(_inputJarak.text);
         Konstanta.gravitasi = float.Parse(_inputGravitasi.text);
     }
+
+    public void ResetField()
+    {
+        _inputTinggiRing.text = " ";
+        _inputTinggiPemain.text = " ";
+        _inputJarak.text = " ";
+        _inputGravitasi.text = " ";
+
+    }
 }
