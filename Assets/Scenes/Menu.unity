@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2889,8 +2889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e41886213c62e4ea64c301990f8535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputTinggiRing: {fileID: 1273297534}
-  _inputTinggiPemain: {fileID: 813974874}
   _inputJarak: {fileID: 791645224}
   _inputGravitasi: {fileID: 97104693}
 --- !u!1 &1143107079
