@@ -1,30 +1,37 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ParaScript : MonoBehaviour
 {
-    [SerializeField] float timer;
+    private float timer;
     [SerializeField] float vo;
     [SerializeField] float sudut;
     [SerializeField] const float gravitasi = 9.8f;
+
+    private Vector3 initialPosisiton;
     // Start is called before the first frame update
     void Start()
     {
-        
+        initialPosisiton = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+        timer += Time.deltaTime/2;
 
         transform.position = new Vector3
             (
-                PosX(vo, sudut, timer),
-                PosY(vo, sudut, timer),
-                0
+                initialPosisiton.x + PosX(vo, sudut, timer),
+                initialPosisiton.y + PosY(vo, sudut, timer),
+                transform.position.z
             );
+    }
+
+    private void FixedUpdate()
+    {
     }
 
     private float PosX(float _vo, float _s, float _w)
