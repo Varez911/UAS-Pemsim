@@ -17,6 +17,20 @@ public class ParaScript : MonoBehaviour
         initialPosisiton = transform.position;
     }
 
+    //
+    public float Vo
+    {
+        get => vo;
+        set => vo = value;
+    }
+
+    public float Sudut
+    {
+        get => sudut;
+        set => sudut = value;
+    }
+
+    
     // Update is called once per frame
     void Update()
     {
@@ -28,6 +42,11 @@ public class ParaScript : MonoBehaviour
                 initialPosisiton.y + PosY(vo, sudut, timer),
                 transform.position.z
             );
+        Debug.Log("Ketinggian Maks: " + KetinggianMaksimum());
+        Debug.Log("Waktu ke Ketinggian Maks: " + WaktuTitikPuncak());
+        Debug.Log("Jangkauan Maks: " + JangkauanMaksimum());
+        Debug.Log("Waktu ke Jangkauan Maks: " + WaktuJangkauanMaksimum());
+        
     }
 
     private void FixedUpdate()
@@ -51,23 +70,23 @@ public class ParaScript : MonoBehaviour
     /// <param name="_s"></param>
     /// <returns></returns>
     
-    private float WaktuTitikPuncak(float _vo, float _s)
+    public float WaktuTitikPuncak()
     {
-        return (_vo * Mathf.Sin(_s * Mathf.PI / 180) / gravitasi);
+        return (vo * Mathf.Sin(sudut * Mathf.PI / 180) / gravitasi);
     }
 
-    private float KetinggianMaksimum(float _vo, float _s)
+    public float KetinggianMaksimum()
     {
-        return Mathf.Pow(_vo, 2) * Mathf.Pow(Mathf.Sin(_s * Mathf.PI / 180), 2) / (2 * gravitasi);
+        return Mathf.Pow(vo, 2) * Mathf.Pow(Mathf.Sin(sudut * Mathf.PI / 180), 2) / (2 * gravitasi);
     }
 
-    private float JangkauanMaksimum(float _vo, float _s)
+    public float JangkauanMaksimum()
     {
-        return 2 * Mathf.Pow(_vo, 2) * Mathf.Sin(_s * Mathf.PI / 180) * Mathf.Cos(_s * Mathf.PI / 180) / gravitasi;
+        return 2 * Mathf.Pow(vo, 2) * Mathf.Sin(sudut * Mathf.PI / 180) * Mathf.Cos(sudut * Mathf.PI / 180) / gravitasi;
     }
 
-    private float WaktuJangkauanMaksimum(float _vo, float _s)
+    public float WaktuJangkauanMaksimum()
     {
-        return 2 * WaktuTitikPuncak(_vo, _s);
+        return 2 * WaktuTitikPuncak();
     }
 }
