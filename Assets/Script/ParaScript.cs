@@ -11,13 +11,11 @@ public class ParaScript : MonoBehaviour
     [SerializeField] const float gravitasi = 9.8f;
 
     private Vector3 initialPosisiton;
-    // Start is called before the first frame update
     void Start()
     {
         initialPosisiton = transform.position;
     }
 
-    //
     public float Vo
     {
         get => vo;
